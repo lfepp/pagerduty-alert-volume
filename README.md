@@ -5,13 +5,12 @@ A quick command-line to get the incident volume assigned to an escalation policy
 
 It uses a constant size window and discounts incidents created X minutes after the first. The idea is that the on-call is likely no more burdened by two quick incidents than by one.
 
-usage: alert_volume.py [-h] [-e [ESCALATION_POLICY]] A S
+usage: alert_volume.py [-h] [-e [ESCALATION_POLICY]] A
 
 Graph alert volumes for a given escalation policy.
 
 positional arguments:
   A                     an API key for PagerDuty
-  S                     subdomain for the account
 
 optional arguments:
   -h, --help            show this help message and exit
